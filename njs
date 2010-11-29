@@ -54,14 +54,14 @@ if __name__ == '__main__':
             if options.js_parseonly:
                 cmd += 'print(Narcissus.decompiler.pp(Narcissus.parser.parse("%s"))); ' % exp.replace('"', '\\"')
             else:
-                cmd += 'Narcissus.interpreter.evaluate("%s"); ' % exp.replace('"', '\\"')
+                cmd += 'try { Narcissus.interpreter.evaluate("%s"); } catch(e) { print(e); print("\\nStack trace:"); print(e.stack); }' % exp.replace('"', '\\"')
 
     if options.js_files:
         for file in options.js_files:
             if options.js_parseonly:
                 cmd += 'print(Narcissus.decompiler.pp(Narcissus.parser.parse(snarf("%(file)s"), "%(file)s", 1))); ' % { 'file':file }
             else:
-                cmd += 'Narcissus.interpreter.evaluate(snarf("%(file)s"), "%(file)s", 1); ' % { 'file':file }
+                cmd += 'try { Narcissus.interpreter.evaluate(snarf("%(file)s"), "%(file)s", 1); } catch(e) { print(e); print("\\nStack trace:"); print(e.stack); }' % { 'file':file }
 
     if (not options.js_exps) and (not options.js_files):
         options.js_interactive = True
