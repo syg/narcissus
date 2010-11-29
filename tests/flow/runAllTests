@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# Expects to 'js' to be in PATH
+# Expects Narcissus to be in ../../lib
+
+NARC=../../lib
+JSDEFS=$NARC/jsdefs.js
+JSLEX=$NARC/jslex.js
+JSPARSE=$NARC/jsparse.js
+JSEXEC=$NARC/jsexec.js
+
+js -f $JSDEFS -f $JSLEX -f $JSPARSE -f $JSEXEC -f runAllTests.js
