@@ -1,6 +1,6 @@
 function test() {
-    var x = <H>true;
-    var y = <H>false;
+    var x = <HL>true;
+    var y = <HL>false;
     function k() { y = false; }
     if (x) {
         k();

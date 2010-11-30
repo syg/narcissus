@@ -24,3 +24,5 @@ testCase("call-pass.js", false);
 testCase("call-fail.js", true);
 testCase("closure-pass.js", false);
 testCase("closure-fail.js", true);
+testCase("property-pass.js", false);
+testCase("property-fail.js", true);

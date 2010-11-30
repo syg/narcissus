@@ -1,11 +1,11 @@
 function test() {
-    var x = <H>true;
+    var x = <HL>true;
     var y = true;
     var z = true;
-    y = <H>!y;
+    y = <HL>!y;
     if (x)
         y = false;
-    z = <H>!z;
+    z = <HL>!z;
     if (!y)
         z = false;
     return !z;
