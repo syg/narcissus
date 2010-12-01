@@ -1,7 +1,7 @@
 function test() {
-    var x = <HH>true;
+    var x = <HU>true;
     var y;
-    if (declassify(x, <LH>)) {
+    if (declassify(x, <LU>)) {
         y = false;
     }
 }

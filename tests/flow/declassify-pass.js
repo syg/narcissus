@@ -1,8 +1,8 @@
 function test() {
-    var x = <HH>true;
+    var x = <HU>true;
     var y;
     if (x) {
-        y = declassify(x, <LH>);
+        y = declassify(x, <LU>);
     }
 }
 test();

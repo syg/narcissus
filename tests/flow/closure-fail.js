@@ -1,5 +1,5 @@
 function test() {
-    var x = <HL>true;
+    var x = <HT>true;
     var y;
     function k() { y = false; }
     if (x) {

@@ -1,7 +1,7 @@
 function test() {
     var o = {};
     o.foo = true;
-    var x = <HL>true;
+    var x = <HT>true;
     if (x) {
         o.foo = false;
     }
