@@ -26,3 +26,6 @@ testCase("closure-pass.js", false);
 testCase("closure-fail.js", true);
 testCase("property-pass.js", false);
 testCase("property-fail.js", true);
+testCase("declassify-pass.js", false);
+testCase("declassify-conditional-pass.js", false);
+testCase("declassify-fail.js", true);
