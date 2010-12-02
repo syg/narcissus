@@ -2,7 +2,7 @@ function test() {
     var x = <HU>true;
     var y;
     if (x) {
-        y = declassify(x, <LU>);
+        y = declassify(true, <LU>);
     }
 }
 test();
